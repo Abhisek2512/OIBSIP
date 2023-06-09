@@ -1,0 +1,472 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #01031a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: left;
+    animation: floating 3s infinite;
+    
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f7f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  header .logo span {
+    color: #36d8d8;
+  }
+  
+  header .logo:hover {
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  /* Home Section Styles */
+#home {
+
+  background-image: url(bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+#home h1 {
+  font-size: 65px;
+  color: #fff;
+  margin-bottom: 20px;
+  opacity:100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-animation 2s ease forwards ;
+}
+
+#home h2 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: rgb(192, 180, 180);
+  opacity: 100%;
+  animation: typing 3s ease forwards ;
+}
+
+
+#home .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007f7f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  opacity: 100%;
+  animation: glowing 5s infinite; ;
+}
+
+#home .image-container {
+  position: relative;
+  opacity: 100%;
+  transform: translateX(100px) translateY(100px);
+  animation: fade-in 4s ease forwards;
+}
+
+#home .animated-line {
+  height: 2px;
+  background-color: #007f7f;
+  margin: 30px auto;
+  opacity: 100%;
+  transform: scaleX(0);
+  animation: expand-line 3s ease forwards;
+}
+
+
+
+/* CSS for the <section id="about"> */
+#about {
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#about h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#about .image-container {
+  position: relative;
+  opacity: 100%;
+  width: 30%;
+  transform: translateX(100px) translateY(100px);
+  animation: fade-in1 4s ease forwards ;
+}
+
+@keyframes fade-in1 {
+  from {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(145vh) translateY(-65%);
+  }
+}
+
+.typing-container {
+
+  display: flex;
+  text-align:center;
+  flex-direction: column;
+  align-items: right;
+}
+
+.typing-heading {
+  font-size: 65px;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-animation 5s steps(40) ;
+}
+
+@keyframes typing-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-media a {
+  margin: 0 10px; 
+}
+
+.social-media img {
+  align-items: center;
+  width: 80px; 
+  height: 80px; 
+}
+.social-media span {
+  font-size: 25PX;
+  text-align: center;
+  height: fit-content;
+  margin-left: 10px; 
+}
+#about h3{
+  color: #ffffff;
+}
+
+
+#portfolio {
+  padding: 4rem;
+  text-align: center;
+  background-size: cover;
+  columns: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#portfolio h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  opacity:100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-animation 2s ease forwards ;
+
+}
+#portfolio h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  background-clip: padding-box;
+  
+  opacity: 100%;
+  animation: typing 3s ease forwards ;
+
+}
+#portfolio p{
+  color: rgb(192, 180, 180);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+
+img {
+  width: 53%;
+  height: 52%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.services3-guide h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  animation: floating 3s infinite;
+}
+
+.services3-guide p {
+  color:#333333;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.guide-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007f7f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  opacity: 100%;
+  animation: floating 3s infinite;
+}
+
+
+
+  #blog {
+    color: #ffffff;
+    padding: 4rem;
+    text-align: center;
+    
+  }
+  
+  #blog h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    opacity:100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing-animation 2s ease forwards ;
+  
+  }
+  #blog p{color: rgb(192, 180, 180);
+  }
+  #blog h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+    background-clip: padding-box;
+    opacity: 100%;
+    animation: typing 3s ease forwards ;
+  
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+  }
+  
+  
+  .service-guide img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .services3-guide h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    animation: floating 3s infinite;
+  }
+  
+  .services3-guide p {
+    color:#333333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .guide-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007f7f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 100%;
+    animation: floating 3s infinite;
+  }
+  
+  
+  
+#contact {
+ padding: 50px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity:100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing-animation 2s ease forwards ;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+button[type="submit"] {
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: #007f7f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    opacity: 100%;
+    animation: floating 3s infinite;
+  }
+
+  @keyframes typing-animation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(100px) translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
+  }
+  
+  @keyframes expand-line {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+ 
